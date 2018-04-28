@@ -1,0 +1,107 @@
+
+/* container */
+
+.mainContainer {
+    margin:0 auto;
+    padding:0;
+    width:100vw;
+    height:100vh;
+    font-family: 'Black Han Sans';
+    font-size:2em;
+    background: #6ba6cd;
+    color : #b6b6b6;
+}
+
+ /* canvas */
+.mainCanvas {
+    height:100%;
+    display : flex;
+    flex-Flow:column;
+    align-Items:center;
+    border:1px solid #266a65;
+    justify-Content:center;
+    
+}
+/* controls */
+.mainControls {
+    background : #152f41;
+    margin-bottom: 13px;
+    padding: 20px;
+    border-radius:15px;
+    
+}
+.ControlContent{
+    display: flex;
+    flex-flow: Column;
+ }
+/* board */ 
+
+ .mainBoard {
+     display : flex;
+     
+ }
+
+ .grid {
+    width: 200px;
+    height: 200px;
+    background:'';
+    border:1px solid #cfcfcf;
+    text-Align: center ;
+    font-size : 4em;
+    transition : .2s;
+    line-height: 1.5;
+    
+ }
+ .grid:hover {
+     background: #bf4747c7
+     
+ }
+
+ /*modal styles */
+
+  .mainModal {
+    position: absolute;
+    top         : 50%;
+    left        : 50%;
+    right       : auto;
+    bottom      : auto;
+    margin-Right : -50%;
+    transform   : translate(-50%, -50%);
+    width       : 20vw;
+    height       : 20vh;
+    background  :#478ebf;
+    color       :#cfcfcf;
+    animation: modalLeft ease 3s backwards; 
+    
+  }
+  
+  
+  .mainModalContent{
+    font-family: 'Black Han Sans';
+    font-size:2.5em;
+    line-height: 4;
+    text-align: center;
+  }
+  @keyframes modalLeft {
+    
+        0% { 
+             transform: translateX(-100%); 
+            
+             opacity: 0;
+                }
+        50% { 
+             transform: translateX(-50%); 
+             
+             opacity: 1;
+                }
+        100% { 
+            transform: translateX(200%); 
+            
+            opacity: 0;
+                }
+    }
+     
+    
+  
+
+    
